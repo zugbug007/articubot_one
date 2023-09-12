@@ -1,3 +1,3 @@
-## Robot Package Template
-
-Note that each directory currently has at least one file in it to ensure that git tracks the files (and, consequently, that a fresh clone has direcctories present for CMake to find). These example files can be removed if required (and the directories can be removed if `CMakeLists.txt` is adjusted accordingly).
+## Robot Package
+Small autonomous mapping rover build usinhg off the shelf 12v DC motors, Raspberry Pi 4B and LiDAR unit.
+Based on Josh Newans (https://articulatedrobotics.xyz/) build project.
