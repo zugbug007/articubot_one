@@ -19,6 +19,9 @@
     <color rgba="0 0 0 1"/>
     </material>
 
+    <material name="red">
+    <color rgba="1 0 0 1"/>
+    </material>
 
     <!-- Center of the two drive wheels/centr of rotation-->
     <link name="base_link">
