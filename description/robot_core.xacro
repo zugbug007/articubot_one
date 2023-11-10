@@ -38,7 +38,7 @@
         <color rgba="1 0 0 1"/>
     </material>
 
-    <!-- Center of the two drive wheels/centr of rotation-->
+    <!-- Center of the two drive wheels/center of rotation-->
     <link name="base_link">
 
     </link>
@@ -87,10 +87,9 @@
     <joint name="left_wheel_joint" type="continuous">
         <parent link="base_link"/>
         <child link="left_wheel"/>
-        <origin xyz="0 ${-wheel_offset_y} 0" rpy="-${pi/2} 0 0" />
-        <axis xyz="0 0 1"/>
+        <origin xyz="0 ${wheel_offset_y} 0" rpy="${pi/2} 0 0" />
+        <axis xyz="0 0 -1"/>
     </joint>
-
     <link name="left_wheel">
         <visual>
             <geometry>
@@ -107,18 +106,16 @@
             <origin xyz="0 0 0" rpy="0 0 0"/>
         </xacro:inertial_cylinder>
     </link>
-
     <gazebo reference="left_wheel">
         <material>Gazebo/Blue</material>
     </gazebo>
-
 
     <!-- right Wheel -->
     <joint name="right_wheel_joint" type="continuous">
         <parent link="base_link"/>
         <child link="right_wheel"/>
-        <origin xyz="0 ${wheel_offset_y} 0" rpy="${pi/2} 0 0" />
-        <axis xyz="0 0 -1"/>
+        <origin xyz="0 ${-wheel_offset_y} 0" rpy="-${pi/2} 0 0" />
+        <axis xyz="0 0 1"/>
     </joint>
 
     <link name="right_wheel">
