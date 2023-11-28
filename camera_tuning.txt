@@ -1,3 +1,4 @@
+Gazebo Camera
 x_min=0
 x_max=100
 y_min=21
@@ -10,3 +11,17 @@ v_min=0
 v_max=255
 sz_min=0
 sz_max=17
+
+Robot camera
+   x_min: 0
+    x_max: 100
+    y_min: 0
+    y_max: 100
+    h_min: 25
+    h_max: 180
+    s_min: 33
+    s_max: 255
+    v_min: 118
+    v_max: 255
+    sz_min: 0
+    sz_max: 25
