@@ -5,14 +5,14 @@ detect_ball:
     x_max: 100
     y_min: 0
     y_max: 100
-    h_min: 25
+    h_min: 28
     h_max: 180
-    s_min: 33
+    s_min: 77
     s_max: 255
-    v_min: 118
+    v_min: 96
     v_max: 255
     sz_min: 0
-    sz_max: 25
+    sz_max: 100
 
 detect_ball_3d:
   ros__parameters:
